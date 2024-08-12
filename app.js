@@ -5,7 +5,7 @@ const app = express()
 const port = 3000
 
 app.use(expressLayouts)
-app.use(express.static('build'))
+app.use(express.static('public'))
 app.set('view engine', 'ejs');
 app.set('layout', 'partials/layout-horizontal');
 
