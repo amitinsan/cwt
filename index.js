@@ -14,6 +14,11 @@ app.get('/', (req, res) => {
     res.render('./pages/index.ejs')
 })
 
+app.get('/about-us', (req, res) => {
+    res.render('./pages/about-us.ejs')
+})
+
+
 app.get('/about-us.htm', (req, res) => {
     res.render('./pages/about-us.ejs')
 })
