@@ -1,13 +1,14 @@
 {
   "name": "cwt",
   "version": "1.0.0",
-  "main": "app.js",
+  "main": "index.js",
   "repository": "https://github.com/amitinsan/cwt.git",
   "author": "Amit Yadav <amit.insan@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon app.js",
-    "start": "node app.js"
+    "build": "echo no build command",
+    "dev": "nodemon index.js",
+    "start": "node index.js"
   },
   "dependencies": {
     "ejs": "^3.1.10",
