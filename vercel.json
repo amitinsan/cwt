@@ -1,6 +1,5 @@
 {
     "version": 2,
-    "public": true,
     "builds": [
      {
          "src": "index.js",
@@ -13,16 +12,12 @@
     ],
     "routes": [
         {
-            "src": "/assets/(.*)",
-            "dest": "/public/assets/$1"
-          },
-          {
-            "src": "/(.*)\\.htm",
-            "dest": "/"
-          },
-          {
-            "src": "/(.*)",
-            "dest": "/"
-          }
+      "src": "/(.+\\.[a-z]+)$",
+      "dest": "/public/$1"
+    },
+    {
+        "src": "/((?!.*\\.\\w+$).*)",
+        "dest": "/"
+      }
     ]
  }
